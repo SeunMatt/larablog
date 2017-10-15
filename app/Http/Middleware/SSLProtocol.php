@@ -17,8 +17,6 @@ class SSLProtocol
     public function handle($request, Closure $next)
     {
 
-        Log::info("uses SSLProtocol [ ". $request->secure() . " ] route = ". $request->getRequestUri());
-
         if (!$request->secure() && env('APP_ENV') === 'production') {
                 return redirect()->secure($request->getRequestUri());
         }
