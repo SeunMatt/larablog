@@ -12,7 +12,7 @@ class PostController extends Controller
 {
     
     public function index() {
-    	return view("admin.posts.index", ["posts" => Post::all()]);
+    	return view("admin.posts.index", ["posts" => Post::latest()->get()]);
     }
 
     public function edit(Request $request, $id = null) {

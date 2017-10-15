@@ -56,7 +56,7 @@
 		                @foreach($posts as $post)
 		                <tr>
 		                  <td>{{$post->title}}</td>
-		                  <td>{{$post->post}}</td>
+		                  <td>{{substr($post->post, 0, 120)}}</td>
                       <td>{{$post->author}}</td>
                       <td>{{$post->created_at}}</td>
 		                  <td>@if($post->published) TRUE @else FALSE @endif</td>
@@ -91,7 +91,8 @@
       "searching": false,
       "ordering": true,
       "info": true,
-      "autoWidth": false
+      "autoWidth": false,
+      "aaSorting": [],
     });
 
 
