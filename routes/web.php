@@ -11,10 +11,6 @@
 |
 */
 
-if (env('APP_ENV') === 'production') {
-    URL::forceSchema('https');
-}
-
 Route::group(["prefix" => "admin", "namespace" => "Admin"], function () {
 
 	Route::get("/posts", "PostController@index")->name("admin.posts.index");
