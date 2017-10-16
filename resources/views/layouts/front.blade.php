@@ -12,13 +12,13 @@
     <title>Lara Blog</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{asset('assets/front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/front/vendor/bootstrap/css/bootstrap.min.css', env('USE_SSL'))}}" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="{{asset('assets/front/css/clean-blog.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/front/css/clean-blog.min.css', env('USE_SSL'))}}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{asset('assets/front/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('assets/front/vendor/font-awesome/css/font-awesome.min.css', env('USE_SSL'))}}" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -110,17 +110,17 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="{{asset('assets/front/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('assets/front/vendor/jquery/jquery.min.js', env('USE_SSL'))}}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{asset('assets/front/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('assets/front/vendor/bootstrap/js/bootstrap.min.js', env('USE_SSL'))}}"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="{{asset('assets/front/js/jqBootstrapValidation.js')}}"></script>
-    <script src="{{asset('assets/front/js/contact_me.js')}}"></script>
+    <script src="{{asset('assets/front/js/jqBootstrapValidation.js', env('USE_SSL'))}}"></script>
+    <script src="{{asset('assets/front/js/contact_me.js', env('USE_SSL'))}}"></script>
 
     <!-- Theme JavaScript -->
-    <script src="{{asset('assets/front/js/clean-blog.min.js')}}"></script>
+    <script src="{{asset('assets/front/js/clean-blog.min.js', env('USE_SSL'))}}"></script>
 
 </body>
 
